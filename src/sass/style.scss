@@ -1,10 +1,1 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: "Montserrat", sans-serif;
-	font-family: "Raleway", sans-serif;
-}
+@use "main-style" as *;
