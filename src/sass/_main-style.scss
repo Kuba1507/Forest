@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -7,4 +9,5 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-family: "Raleway", sans-serif;
 	font-size: 1.6rem;
+	background-color: $bg-color;
 }
