@@ -1,2 +1,41 @@
+.wrapper {
+	margin: 0 auto;
+	width: min(100%, 1200px);
+}
+
 //nav
 
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.5em;
+
+		&-title {
+			margin-left: 0.25em;
+		}
+
+		&-title,
+		i {
+			font-size: 2.5rem;
+		}
+	}
+
+	&__burger-btn {
+		padding: 1.5em;
+		cursor: pointer;
+
+		i {
+			font-size: 3rem;
+		}
+	}
+
+	&__items {
+		display: none;
+	}
+}
