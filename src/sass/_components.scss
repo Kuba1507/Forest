@@ -46,11 +46,6 @@
 			}
 		}
 
-		&__logo,
-		&__burger-btn {
-			height: 100%;
-		}
-
 		&__items {
 			position: absolute;
 			display: flex;
@@ -66,8 +61,8 @@
 			transition: transform 1s, opacity 2.5s;
 
 			&-item {
-				padding: 1.5em;
-				font-size: 2.2rem;
+				font-family: "Raleway", sans-serif;
+				font-size: 2rem;
 				color: $black;
 				letter-spacing: 2px;
 				text-decoration: none;
