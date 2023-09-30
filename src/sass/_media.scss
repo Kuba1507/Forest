@@ -1,0 +1,43 @@
+@use 'colors' as *;
+
+@media (min-width: 768px) {
+	nav.nav {
+		height: 100px;
+
+		.navbar {
+			&__logo {
+				&-title {
+					margin-left: 0.5em;
+				}
+
+				&-title,
+				i {
+					font-size: 3rem;
+				}
+			}
+
+			&__burger-btn {
+				padding: 2em;
+
+				i {
+					font-size: 3.5rem;
+				}
+			}
+
+			&__items {
+				top: 100px;
+				height: calc(100vh - 100px);
+
+				&-item {
+					padding: 2.2em;
+					font-size: 2.5rem;
+                    letter-spacing: 3px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+    
+}

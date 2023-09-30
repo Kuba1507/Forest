@@ -1,5 +1,5 @@
-@use "colors" as *;
-@use "media" as *;
+@use 'colors' as *;
+@use 'media' as *;
 
 .wrapper {
 	margin: 0 auto;
@@ -50,7 +50,7 @@
 			position: absolute;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-evenly;
+			justify-content: flex-start;
 			align-items: center;
 			position: absolute;
 			top: 80px;
@@ -61,7 +61,8 @@
 			transition: transform 1s, opacity 2.5s;
 
 			&-item {
-				font-family: "Raleway", sans-serif;
+				padding: 1.5em;
+				font-family: 'Raleway', sans-serif;
 				font-size: 2rem;
 				color: $black;
 				letter-spacing: 2px;
