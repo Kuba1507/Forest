@@ -1,5 +1,4 @@
 @use 'colors' as *;
-@use 'media' as *;
 
 .wrapper {
 	margin: 0 auto;
@@ -104,27 +103,27 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.6);
 		z-index: 1;
 	}
 
-	&__content-box {
+	.content-box {
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		padding: 6em 2em;
 		z-index: 2;
 
-		&-text {
+		&__text {
 			font-size: 1.8rem;
 		}
 
-		&-title {
+		&__title {
 			font-size: 3rem;
 		}
 
-		&-text,
-		&-title {
+		&__text,
+		&__title {
 			padding: 0.1em 0;
 			color: $bg-color;
 		}

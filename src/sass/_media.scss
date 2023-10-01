@@ -1,9 +1,7 @@
 @use 'colors' as *;
 
 @media (min-width: 768px) {
-	nav.nav {
-		height: 80px;
-
+	.nav {
 		.navbar {
 			&__logo {
 				&-title {
@@ -36,6 +34,12 @@
 			}
 		}
 	}
+
+	.header {
+		.content-box {
+			padding: 6em 4em;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -43,7 +47,7 @@
 		padding: 0 1em;
 	}
 
-	nav.nav {
+	.nav {
 		.navbar {
 			height: 100%;
 
@@ -73,6 +77,22 @@
 						color: $bg-color;
 					}
 				}
+			}
+		}
+	}
+
+	.header {
+		background-image: url('../img/hero-img-large.jpg');
+
+		.content-box {
+			padding: 10em 1em;
+
+			&__text {
+				font-size: 2.2rem;
+			}
+
+			&__title {
+				font-size: 3.5rem;
 			}
 		}
 	}
