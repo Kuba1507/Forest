@@ -15,8 +15,6 @@
 			}
 
 			&__burger-btn {
-				padding: 2em;
-
 				i {
 					font-size: 3.5rem;
 				}
@@ -38,6 +36,32 @@
 	.header {
 		.content-box {
 			padding: 6em 4em;
+		}
+	}
+
+	main {
+
+		.aboutus {
+			&__content {
+				flex-direction: row;
+
+				&-text-heading {
+					font-size: 2rem;
+				}
+
+				&-img {
+					width: 50%;
+					height: auto;
+				}
+
+				&-text {
+					margin: 0;
+
+					&-description {
+						font-weight: 400;
+					}
+				}
+			}
 		}
 	}
 }
