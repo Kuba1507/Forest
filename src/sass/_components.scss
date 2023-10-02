@@ -1,4 +1,4 @@
-@use 'colors' as *;
+@use "colors" as *;
 
 .wrapper {
 	margin: 0 auto;
@@ -75,7 +75,7 @@
 
 			&-item {
 				padding: 1.5em;
-				font-family: 'Raleway', sans-serif;
+				font-family: "Raleway", sans-serif;
 				font-size: 2rem;
 				color: $black;
 				letter-spacing: 2px;
@@ -98,7 +98,7 @@
 	margin-top: 80px;
 	height: 100%;
 	max-height: 400px;
-	background-image: url('../img/hero-img-small.jpg');
+	background-image: url("../img/hero-img-small.jpg");
 	background-size: cover;
 	background-position: 50% 65%;
 	background-repeat: no-repeat;
@@ -166,16 +166,62 @@ main {
 			&-text {
 				margin-top: 1em;
 
+				&-heading {
+					font-family: "Montserrat", sans-serif;
+					font-weight: 800;
+				}
+
 				&-description {
 					margin-top: 0.5em;
 					font-weight: 200;
-					text-align: justify;
+					line-height: 1.5em;
 				}
 			}
 
 			&-img,
 			&-text {
 				padding: 0 1em;
+			}
+		}
+	}
+
+	.adventure {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2em;
+		padding: 2em 1.5em;
+		background-image: url("../img/section-bg-small.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		&__shadow {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 1;
+		}
+
+		&__box {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: none;
+			border: 1px solid $bg-color;
+			z-index: 5;
+
+			&-text {
+				padding: 1.5em 2em;
+				font-size: 1.8rem;
+				font-weight: bold;
+				text-align: center;
+				color: $bg-color;
 			}
 		}
 	}
