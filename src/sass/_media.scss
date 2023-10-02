@@ -185,4 +185,41 @@
 			}
 		}
 	}
+
+	.footer {
+		&__desktop {
+			display: flex;
+			padding: 4em 0;
+			width: 100%;
+			background-color: #f0f0f0;
+
+			&-logo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 50%;
+
+				i,
+				&-name {
+					font-size: 4rem;
+				}
+
+				i {
+					margin-right: 0.25em;
+					color: rgb(44, 44, 44);
+				}
+			}
+
+			&-info {
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				width: 50%;
+			}
+
+			&-info > div {
+				padding: 0 2em;
+			}
+		}
+	}
 }
