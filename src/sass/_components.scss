@@ -241,9 +241,52 @@ main {
 			align-items: center;
 
 			&-card {
-				margin: 1.5em 0;
-				padding: 1em 1.5em;
-				box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+				display: flex;
+				flex-direction: column;
+				margin: 2em 0;
+				padding: 1em 2em;
+				width: 90%;
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+					rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+				&-type {
+					font-size: 2rem;
+					font-weight: 600;
+					text-align: center;
+				}
+
+				&-price {
+					margin: 0.25em 0 0.5em 0;
+					font-size: 3.5rem;
+					font-weight: bold;
+					text-align: center;
+				}
+
+				&-option {
+					margin: 0.5em 0;
+
+					&--not-included {
+						color: #757575;
+					}
+
+					.fa-solid {
+						&--included {
+							color: $offers-green;
+						}
+					}
+				}
+
+				&-btn {
+					margin: 1.5em 0;
+					padding: 0.5em 0;
+					font-family: "Montserrat", sans-serif;
+					font-size: 1.5rem;
+					border-radius: 5px;
+					border: none;
+					background: none;
+					box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+					cursor: pointer;
+				}
 			}
 		}
 	}
