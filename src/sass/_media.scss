@@ -75,7 +75,14 @@
 				}
 			}
 		}
-		
+
+		.offers {
+			&__cards {
+				&-card {
+					width: 50%;
+				}
+			}
+		}
 	}
 }
 
@@ -163,6 +170,17 @@
 				&-text {
 					padding: 1.5em 8em;
 					font-size: 3.2rem;
+				}
+			}
+		}
+
+		.offers {
+			&__cards {
+				flex-direction: row;
+
+				&-card {
+					margin: 2em;
+					padding: 2em;
 				}
 			}
 		}
