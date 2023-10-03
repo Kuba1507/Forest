@@ -83,6 +83,34 @@
 				}
 			}
 		}
+
+		.offers-subsite {
+			&__cards {
+				&-card {
+					margin: 1.5em 3em;
+
+					.description-box {
+						&__title {
+							font-size: 2rem;
+						}
+
+						&__reviews {
+							padding: 1.5em;
+
+							p {
+								padding: 1em;
+							}
+						}
+
+						&__price {
+							&-cost {
+								font-size: 2.8rem;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -181,6 +209,38 @@
 				&-card {
 					margin: 2em;
 					padding: 2em;
+				}
+			}
+		}
+
+		.offers-subsite {
+			margin-bottom: 2em;
+
+			&__cards {
+				flex-direction: row;
+
+				&-card {
+					margin: 1.5em 3em;
+
+					.description-box {
+						&__title {
+							font-size: 2rem;
+						}
+
+						&__reviews {
+							padding: 1.5em;
+
+							p {
+								padding: 1em;
+							}
+						}
+
+						&__price {
+							&-cost {
+								font-size: 2.8rem;
+							}
+						}
+					}
 				}
 			}
 		}
