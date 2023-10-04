@@ -432,5 +432,11 @@ main {
 
 	&__desktop {
 		display: none;
+
+		&-info {
+			&-element {
+				cursor: pointer;
+			}
+		}
 	}
 }

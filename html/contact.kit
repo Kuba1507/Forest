@@ -21,6 +21,22 @@
         <section class="section contact-subsite">
             <div class="wrapper">
                 <h2 class="section-title">Skontakuj się z nami</h2>
+                <form action="mail.php" method="post" class="contact-form">
+                    <div class="contact-box">
+                        <label for="name">Imię:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="contact-box">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="contact-box">
+                        <label for="msg">Wiadomość:</label>
+                        <textarea name="msg" id="msg"></textarea>
+                    </div>
+                    <button>Wyślij</button>
+                </form>
+                <p class="msg-status"></p>
             </div>
         </section>
     </main>

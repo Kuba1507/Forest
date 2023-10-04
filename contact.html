@@ -31,7 +31,7 @@
                 <a href="index.html#" class="navbar__items-item" target="_blank" rel="noopener">Home</a>
                 <a href="index.html#aboutus" class="navbar__items-item" target="_blank" rel="noopener">O nas</a>
                 <a href="index.html#offers" class="navbar__items-item" target="_blank" rel="noopener">Oferta</a>
-                <a href="contact.html#contact" class="navbar__items-item" target="_blank" rel="noopener">Kontakt</a>
+                <a href="contact.html" class="navbar__items-item" target="_blank" rel="noopener">Kontakt</a>
             </div>
         </div>
     </div>
@@ -41,6 +41,22 @@
         <section class="section contact-subsite">
             <div class="wrapper">
                 <h2 class="section-title">Skontakuj się z nami</h2>
+                <form action="mail.php" method="post" class="contact-form">
+                    <div class="contact-box">
+                        <label for="name">Imię:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="contact-box">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="contact-box">
+                        <label for="msg">Wiadomość:</label>
+                        <textarea name="msg" id="msg"></textarea>
+                    </div>
+                    <button>Wyślij</button>
+                </form>
+                <p class="msg-status"></p>
             </div>
         </section>
     </main>
