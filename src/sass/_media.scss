@@ -1,4 +1,4 @@
-@use "colors" as *;
+@use 'colors' as *;
 
 @media (min-width: 768px) {
 	.nav {
@@ -154,7 +154,7 @@
 	}
 
 	.header {
-		background-image: url("../img/hero-img-large.jpg");
+		background-image: url('../img/hero-img-large.jpg');
 
 		.content-box {
 			padding: 10em 1em;
@@ -186,7 +186,7 @@
 		}
 
 		.adventure {
-			background-image: url("../img/section-bg-large.jpg");
+			background-image: url('../img/section-bg-large.jpg');
 
 			&__shadow {
 				background-color: rgba(0, 0, 0, 0.65);
@@ -244,6 +244,13 @@
 				}
 			}
 		}
+
+		.contact-subsite {
+			.contact-form {
+				padding: 1em 8em;
+			}
+		}
+		
 	}
 
 	.footer {
