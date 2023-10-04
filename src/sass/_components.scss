@@ -404,7 +404,11 @@ main {
 	}
 
 	.contact-subsite {
-		text-align: center;
+		.google-map {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
 		.section-title {
 			margin-top: 80px;
