@@ -413,7 +413,6 @@ main {
 
 		.contact-form {
 			padding: 1em 2em;
-			// background-color: #f0f0f0;
 			border-radius: 24px;
 
 			label {
@@ -442,7 +441,7 @@ main {
 			input,
 			textarea,
 			button {
-				padding: 0.5em;
+				padding: 0.75em;
 				font-size: 1.5rem;
 				font-family: "Montserrat", sans-serif;
 				border: 2px solid hsl(0, 0%, 85%);
@@ -453,7 +452,13 @@ main {
 		.contact-box {
 			display: flex;
 			flex-direction: column;
-			margin: 2em 0;
+			margin: 1.5em 0;
+
+			p.error {
+				margin-top: 0.25em;
+				color: rgb(230, 0, 0);
+				visibility: hidden;
+			}
 		}
 	}
 }
