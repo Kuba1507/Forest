@@ -408,9 +408,53 @@ main {
 	.contact-subsite {
 		.section-title {
 			margin-top: 80px;
+			margin-bottom: 1em;
 		}
 
-		
+		.contact-form {
+			padding: 1em 2em;
+			// background-color: #f0f0f0;
+			border-radius: 24px;
+
+			label {
+				font-size: 2rem;
+				margin-bottom: 0.5em;
+			}
+
+			textarea {
+				resize: vertical;
+				min-height: 150px;
+			}
+
+			.send-btn {
+				padding: 1em;
+				width: 100%;
+				font-weight: 200;
+				background-color: #ebebeb;
+				transition: background-color 0.3s;
+				cursor: pointer;
+			}
+
+			.send-btn:hover {
+				background-color: #cccccc;
+			}
+
+			input,
+			textarea,
+			button {
+				padding: 0.5em;
+				font-size: 1.5rem;
+				font-family: "Montserrat", sans-serif;
+				border: 2px solid hsl(0, 0%, 85%);
+				border-radius: 12px;
+			}
+		}
+
+		.contact-box {
+			display: flex;
+			flex-direction: column;
+			margin: 2em 0;
+		}
 	}
 }
 
