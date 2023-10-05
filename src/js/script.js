@@ -3,6 +3,7 @@ const navbar = document.querySelector(".navbar");
 const burgerBtn = document.querySelector(".navbar__burger-btn");
 const navItems = document.querySelector(".navbar__items");
 const allNavItem = document.querySelectorAll(".navbar__items-item");
+const sections = document.querySelectorAll("section");
 
 //form
 const username = document.querySelector("#name");
@@ -66,11 +67,34 @@ const closeMsgStatus = () => {
 	popup.classList.remove("show-msg");
 };
 
+const isInViewport = (elem) => {
+	const rect = elem.getBoundingClientRect();
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <=
+			(window.innerHeight || document.documentElement.clientHeight) &&
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	);
+};
+
+const setActiveNavItem = () => {
+	sections.forEach((section, index) => {
+		if (isInViewport(section)) {
+			allNavItem.forEach((navItem) => {
+				navItem.classList.remove("active");
+			});
+			allNavItem[index].classList.add("active");
+		}
+	});
+};
+
 allNavItem.forEach((item) => {
 	item.addEventListener("click", closeNav);
 });
 
 burgerBtn.addEventListener("click", handleNav);
+window.addEventListener("scroll", setActiveNavItem);
 
 document.addEventListener("DOMContentLoaded", function () {
 	const sendBtn = document.querySelector(".send-btn");
