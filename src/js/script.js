@@ -11,8 +11,6 @@ const msg = document.querySelector("#msg");
 const usernameError = document.querySelector(".error-name");
 const emailError = document.querySelector(".error-email");
 const msgError = document.querySelector(".error-msg");
-const sendBtn = document.querySelector(".send-btn");
-const closeBtn = document.querySelector(".close-btn");
 const popup = document.querySelector(".msg-status");
 
 const handleNav = () => {
@@ -73,5 +71,13 @@ allNavItem.forEach((item) => {
 });
 
 burgerBtn.addEventListener("click", handleNav);
-sendBtn.addEventListener("click", checkForm);
-closeBtn.addEventListener("click", closeMsgStatus);
+
+document.addEventListener("DOMContentLoaded", function () {
+	const sendBtn = document.querySelector(".send-btn");
+	const closeBtn = document.querySelector(".close-btn");
+
+	if (sendBtn) {
+		sendBtn.addEventListener("click", checkForm);
+		closeBtn.addEventListener("click", closeMsgStatus);
+	}
+});
