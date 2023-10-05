@@ -38,6 +38,11 @@
 				transition: color 0.3s;
 				cursor: pointer;
 
+				img {
+					width: 35px;
+					height: 35px;
+				}
+
 				&-title {
 					margin-left: 0.25em;
 				}
@@ -254,9 +259,14 @@ main {
 				color: rgb(141, 121, 121);
 			}
 
-			i {
-				margin-left: 0.5em;
-				font-size: 3rem;
+			&:hover img {
+				transform: scale(0.9);
+			}
+
+			img {
+				width: 35px;
+				height: 35px;
+				transition: transform 0.3s;
 			}
 		}
 
@@ -529,6 +539,14 @@ main {
 
 	&__desktop {
 		display: none;
+
+		&-logo {
+			img {
+				width: 35px;
+				height: 35px;
+				margin-right: 0.25em;
+			}
+		}
 
 		&-info {
 			&-element {
